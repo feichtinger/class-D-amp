@@ -1,0 +1,957 @@
+EESchema Schematic File Version 2
+LIBS:class-D_amp-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:tpa3125d2
+LIBS:w_connectors
+LIBS:class-D_amp-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "stereo amplifier, 10W class-D"
+Date "Mon 12 Jän 2015"
+Rev "1.0"
+Comp "JKU, IME"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L TPA3125D2 U1
+U 1 1 54946ED5
+P 5500 3000
+F 0 "U1" H 5200 3950 60  0000 C CNN
+F 1 "TPA3125D2" H 5500 2000 60  0000 C CNN
+F 2 "Sockets_DIP:DIP-20__300_ELL" H 5500 3000 60  0001 C CNN
+F 3 "" H 5500 3000 60  0000 C CNN
+	1    5500 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-RESCUE-class-D_amp C4
+U 1 1 5494811F
+P 4400 3050
+F 0 "C4" H 4400 3150 40  0000 L CNN
+F 1 "1u" H 4406 2965 40  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 4438 2900 30  0001 C CNN
+F 3 "" H 4400 3050 60  0000 C CNN
+	1    4400 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 549482C4
+P 4800 3850
+F 0 "#PWR01" H 4800 3850 30  0001 C CNN
+F 1 "GND" H 4800 3780 30  0001 C CNN
+F 2 "" H 4800 3850 60  0000 C CNN
+F 3 "" H 4800 3850 60  0000 C CNN
+	1    4800 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 5494843B
+P 4400 3350
+F 0 "#PWR02" H 4400 3350 30  0001 C CNN
+F 1 "GND" H 4400 3280 30  0001 C CNN
+F 2 "" H 4400 3350 60  0000 C CNN
+F 3 "" H 4400 3350 60  0000 C CNN
+	1    4400 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR03
+U 1 1 549484F0
+P 4400 2750
+F 0 "#PWR03" H 4400 2850 30  0001 C CNN
+F 1 "VCC" H 4400 2850 30  0000 C CNN
+F 2 "" H 4400 2750 60  0000 C CNN
+F 3 "" H 4400 2750 60  0000 C CNN
+	1    4400 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR04
+U 1 1 54948617
+P 4800 3300
+F 0 "#PWR04" H 4800 3400 30  0001 C CNN
+F 1 "VCC" H 4800 3400 30  0000 C CNN
+F 2 "" H 4800 3300 60  0000 C CNN
+F 3 "" H 4800 3300 60  0000 C CNN
+	1    4800 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 54948805
+P 6200 4350
+F 0 "#PWR05" H 6200 4350 30  0001 C CNN
+F 1 "GND" H 6200 4280 30  0001 C CNN
+F 2 "" H 6200 4350 60  0000 C CNN
+F 3 "" H 6200 4350 60  0000 C CNN
+	1    6200 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP2 C13
+U 1 1 549488F7
+P 7100 2400
+F 0 "C13" H 7100 2500 40  0000 L CNN
+F 1 "470u" H 7106 2315 40  0000 L CNN
+F 2 "Capacitors_Elko_ThroughHole:Elko_vert_20x10mm_RM5_CopperClear" H 7138 2250 30  0001 C CNN
+F 3 "" H 7100 2400 60  0000 C CNN
+	1    7100 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-RESCUE-class-D_amp C11
+U 1 1 549489B1
+P 6850 2400
+F 0 "C11" H 6850 2500 40  0000 L CNN
+F 1 "1u" H 6856 2315 40  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 6888 2250 30  0001 C CNN
+F 3 "" H 6850 2400 60  0000 C CNN
+	1    6850 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-RESCUE-class-D_amp C8
+U 1 1 54948A63
+P 6350 2400
+F 0 "C8" H 6350 2500 40  0000 L CNN
+F 1 "1u" V 6400 2250 40  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 6388 2250 30  0001 C CNN
+F 3 "" H 6350 2400 60  0000 C CNN
+	1    6350 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L C-RESCUE-class-D_amp C9
+U 1 1 54948B7F
+P 6350 3150
+F 0 "C9" H 6350 3250 40  0000 L CNN
+F 1 "1u" V 6400 3000 40  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 6388 3000 30  0001 C CNN
+F 3 "" H 6350 3150 60  0000 C CNN
+	1    6350 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L C-RESCUE-class-D_amp C12
+U 1 1 54948DE5
+P 6850 3150
+F 0 "C12" H 6850 3250 40  0000 L CNN
+F 1 "1u" H 6856 3065 40  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 6888 3000 30  0001 C CNN
+F 3 "" H 6850 3150 60  0000 C CNN
+	1    6850 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP2 C14
+U 1 1 54948E21
+P 7100 3150
+F 0 "C14" H 7100 3250 40  0000 L CNN
+F 1 "470u" H 7106 3065 40  0000 L CNN
+F 2 "Capacitors_Elko_ThroughHole:Elko_vert_20x10mm_RM5_CopperClear" H 7138 3000 30  0001 C CNN
+F 3 "" H 7100 3150 60  0000 C CNN
+	1    7100 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR L2
+U 1 1 5494911A
+P 7900 2100
+F 0 "L2" V 7850 2100 40  0000 C CNN
+F 1 "33u" V 8000 2100 40  0000 C CNN
+F 2 "footprints:Choke_SMD_12x12mm_h4.5mm_handsolder" H 7900 2100 60  0001 C CNN
+F 3 "" H 7900 2100 60  0000 C CNN
+	1    7900 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L INDUCTOR L3
+U 1 1 54B3E05D
+P 7900 3300
+F 0 "L3" V 7850 3300 40  0000 C CNN
+F 1 "33u" V 8000 3300 40  0000 C CNN
+F 2 "footprints:Choke_SMD_12x12mm_h4.5mm_handsolder" H 7900 3300 60  0001 C CNN
+F 3 "" H 7900 3300 60  0000 C CNN
+	1    7900 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L C-RESCUE-class-D_amp C15
+U 1 1 54B3E3DC
+P 8300 2400
+F 0 "C15" H 8300 2500 40  0000 L CNN
+F 1 "220n" V 8150 2300 40  0000 L CNN
+F 2 "Capacitors_ThroughHole:Capacitor7x2.5RM5" H 8338 2250 30  0001 C CNN
+F 3 "" H 8300 2400 60  0000 C CNN
+	1    8300 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-RESCUE-class-D_amp C16
+U 1 1 54B3E542
+P 8300 3600
+F 0 "C16" H 8300 3700 40  0000 L CNN
+F 1 "220n" V 8150 3500 40  0000 L CNN
+F 2 "Capacitors_ThroughHole:Capacitor7x2.5RM5" H 8338 3450 30  0001 C CNN
+F 3 "" H 8300 3600 60  0000 C CNN
+	1    8300 3600
+	1    0    0    -1  
+$EndComp
+Text Notes 6200 2300 0    60   ~ 0
+bootstrap
+Text Notes 6750 1900 0    60   ~ 0
+decoupling
+Text Notes 7300 1650 0    60   ~ 0
+output filter (2 options for L)
+$Comp
+L CP2 C17
+U 1 1 54B3F1DC
+P 8900 2100
+F 0 "C17" H 8900 2200 40  0000 L CNN
+F 1 "470u" H 8906 2015 40  0000 L CNN
+F 2 "Capacitors_Elko_ThroughHole:Elko_vert_20x10mm_RM5_CopperClear" H 8938 1950 30  0001 C CNN
+F 3 "" H 8900 2100 60  0000 C CNN
+	1    8900 2100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R-RESCUE-class-D_amp R1
+U 1 1 54B3F33E
+P 8550 2400
+F 0 "R1" V 8630 2400 40  0000 C CNN
+F 1 "4.7k" V 8557 2401 40  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 8480 2400 30  0001 C CNN
+F 3 "" H 8550 2400 30  0000 C CNN
+	1    8550 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-class-D_amp R2
+U 1 1 54B3F5A0
+P 8550 3600
+F 0 "R2" V 8630 3600 40  0000 C CNN
+F 1 "4.7k" V 8557 3601 40  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 8480 3600 30  0001 C CNN
+F 3 "" H 8550 3600 30  0000 C CNN
+	1    8550 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP2 C18
+U 1 1 54B3F72C
+P 8900 3300
+F 0 "C18" H 8900 3400 40  0000 L CNN
+F 1 "470u" H 8906 3215 40  0000 L CNN
+F 2 "Capacitors_Elko_ThroughHole:Elko_vert_20x10mm_RM5_CopperClear" H 8938 3150 30  0001 C CNN
+F 3 "" H 8900 3300 60  0000 C CNN
+	1    8900 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X02 P2
+U 1 1 54B40049
+P 9500 2400
+F 0 "P2" H 9500 2550 50  0000 C CNN
+F 1 "LEFT" V 9600 2400 50  0000 C CNN
+F 2 "footprints:pt_1,5-2-3,5-h" H 9500 2400 60  0001 C CNN
+F 3 "" H 9500 2400 60  0000 C CNN
+	1    9500 2400
+	1    0    0    1   
+$EndComp
+$Comp
+L CONN_01X02 P3
+U 1 1 54B40242
+P 9500 3600
+F 0 "P3" H 9500 3750 50  0000 C CNN
+F 1 "RIGHT" V 9600 3600 50  0000 C CNN
+F 2 "footprints:pt_1,5-2-3,5-h" H 9500 3600 60  0001 C CNN
+F 3 "" H 9500 3600 60  0000 C CNN
+	1    9500 3600
+	1    0    0    -1  
+$EndComp
+Text Notes 8700 1900 0    60   ~ 0
+DC-blocking
+$Comp
+L GND #PWR06
+U 1 1 54B40CCA
+P 2500 2550
+F 0 "#PWR06" H 2500 2550 30  0001 C CNN
+F 1 "GND" H 2500 2480 30  0001 C CNN
+F 2 "" H 2500 2550 60  0000 C CNN
+F 3 "" H 2500 2550 60  0000 C CNN
+	1    2500 2550
+	1    0    0    -1  
+$EndComp
+Text Notes 9900 3800 1    60   ~ 0
+Output to speakers (8-16 Ohm, 5W)
+$Comp
+L VCC #PWR07
+U 1 1 54B41B65
+P 7100 2100
+F 0 "#PWR07" H 7100 2200 30  0001 C CNN
+F 1 "VCC" H 7100 2200 30  0000 C CNN
+F 2 "" H 7100 2100 60  0000 C CNN
+F 3 "" H 7100 2100 60  0000 C CNN
+	1    7100 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR08
+U 1 1 54B41C78
+P 7200 2900
+F 0 "#PWR08" H 7200 3000 30  0001 C CNN
+F 1 "VCC" H 7200 3000 30  0000 C CNN
+F 2 "" H 7200 2900 60  0000 C CNN
+F 3 "" H 7200 2900 60  0000 C CNN
+	1    7200 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4900 3650 4800 3650
+Wire Wire Line
+	4800 3450 4800 3850
+Wire Wire Line
+	4800 3750 4900 3750
+Connection ~ 4800 3750
+Wire Wire Line
+	4900 2700 4850 2700
+Wire Wire Line
+	4850 2700 4850 2800
+Connection ~ 4850 2800
+Wire Wire Line
+	4900 3450 4800 3450
+Connection ~ 4800 3650
+Wire Wire Line
+	4900 3300 4800 3300
+Wire Wire Line
+	6100 3750 6200 3750
+Wire Wire Line
+	6200 3750 6200 3850
+Wire Wire Line
+	6100 3650 6450 3650
+Wire Wire Line
+	6450 3650 6450 3850
+Wire Wire Line
+	6200 4250 6200 4350
+Wire Wire Line
+	6200 4300 6450 4300
+Wire Wire Line
+	6450 4300 6450 4250
+Connection ~ 6200 4300
+Wire Wire Line
+	6100 2400 6150 2400
+Wire Wire Line
+	6600 2550 6600 2400
+Wire Wire Line
+	6600 2400 6550 2400
+Wire Wire Line
+	6100 3150 6150 3150
+Wire Wire Line
+	6100 3300 7600 3300
+Wire Wire Line
+	6600 3300 6600 3150
+Wire Wire Line
+	6600 3150 6550 3150
+Wire Wire Line
+	6100 2700 9200 2700
+Wire Wire Line
+	6850 2700 6850 2600
+Wire Wire Line
+	7100 2600 7100 2750
+Connection ~ 6850 2700
+Wire Wire Line
+	6850 3450 6850 3350
+Wire Wire Line
+	7100 3350 7100 3500
+Connection ~ 6850 3450
+Wire Wire Line
+	6150 3000 6100 3000
+Wire Wire Line
+	6150 2900 7200 2900
+Wire Wire Line
+	7100 2900 7100 2950
+Wire Wire Line
+	6850 2950 6850 2900
+Connection ~ 6850 2900
+Wire Wire Line
+	6150 2250 6100 2250
+Wire Wire Line
+	6150 2150 7100 2150
+Wire Wire Line
+	7100 2100 7100 2200
+Wire Wire Line
+	6850 2200 6850 2150
+Connection ~ 6850 2150
+Connection ~ 6600 2550
+Connection ~ 6600 3300
+Wire Wire Line
+	8200 2100 8700 2100
+Wire Wire Line
+	8300 1850 8300 2200
+Wire Wire Line
+	8200 3300 8700 3300
+Wire Wire Line
+	8300 3050 8300 3400
+Wire Wire Line
+	7450 2550 6100 2550
+Wire Wire Line
+	8300 2700 8300 2600
+Connection ~ 7100 2700
+Wire Wire Line
+	7450 1850 7450 2550
+Wire Wire Line
+	7450 2100 7600 2100
+Wire Wire Line
+	8300 3900 8300 3800
+Connection ~ 7100 3450
+Wire Wire Line
+	8550 2700 8550 2650
+Connection ~ 8300 2700
+Connection ~ 8300 2100
+Wire Wire Line
+	8550 2100 8550 2150
+Connection ~ 8550 2100
+Connection ~ 8300 3300
+Wire Wire Line
+	8550 3300 8550 3350
+Connection ~ 8550 3300
+Wire Wire Line
+	8550 3900 8550 3850
+Connection ~ 8300 3900
+Wire Wire Line
+	9100 2100 9200 2100
+Wire Wire Line
+	9200 2100 9200 2350
+Wire Wire Line
+	9200 2350 9300 2350
+Wire Wire Line
+	9200 2450 9300 2450
+Wire Wire Line
+	9200 2700 9200 2450
+Connection ~ 8550 2700
+Wire Wire Line
+	9100 3300 9200 3300
+Wire Wire Line
+	9200 3300 9200 3550
+Wire Wire Line
+	9200 3550 9300 3550
+Wire Wire Line
+	9300 3650 9200 3650
+Wire Wire Line
+	9200 3650 9200 3900
+Connection ~ 8550 3900
+Wire Wire Line
+	2500 2400 2400 2400
+Wire Wire Line
+	2500 2000 2500 2550
+$Comp
+L VCC #PWR09
+U 1 1 54B42A30
+P 4800 3000
+F 0 "#PWR09" H 4800 3100 30  0001 C CNN
+F 1 "VCC" H 4800 3100 30  0000 C CNN
+F 2 "" H 4800 3000 60  0000 C CNN
+F 3 "" H 4800 3000 60  0000 C CNN
+	1    4800 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR010
+U 1 1 54B42A53
+P 4800 3150
+F 0 "#PWR010" H 4800 3150 30  0001 C CNN
+F 1 "GND" H 4800 3080 30  0001 C CNN
+F 2 "" H 4800 3150 60  0000 C CNN
+F 3 "" H 4800 3150 60  0000 C CNN
+	1    4800 3150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4900 3000 4800 3000
+Wire Wire Line
+	4900 3150 4800 3150
+$Comp
+L CP2 C6
+U 1 1 54B43144
+P 5550 6050
+F 0 "C6" H 5550 6150 40  0000 L CNN
+F 1 "470u" H 5556 5965 40  0000 L CNN
+F 2 "Capacitors_Elko_ThroughHole:Elko_vert_20x10mm_RM5_CopperClear" H 5588 5900 30  0001 C CNN
+F 3 "" H 5550 6050 60  0000 C CNN
+	1    5550 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP2 C5
+U 1 1 54B432C8
+P 5300 6050
+F 0 "C5" H 5300 6150 40  0000 L CNN
+F 1 "470u" H 5306 5965 40  0000 L CNN
+F 2 "Capacitors_Elko_ThroughHole:Elko_vert_20x10mm_RM5_CopperClear" H 5338 5900 30  0001 C CNN
+F 3 "" H 5300 6050 60  0000 C CNN
+	1    5300 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR L1
+U 1 1 54B4337E
+P 4800 5700
+F 0 "L1" V 4750 5700 40  0000 C CNN
+F 1 "330u" V 4900 5700 40  0000 C CNN
+F 2 "Inductors_NEOSID:Neosid_Inductor_Sd8" H 4800 5700 60  0001 C CNN
+F 3 "" H 4800 5700 60  0000 C CNN
+	1    4800 5700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5550 5650 5550 5850
+Wire Wire Line
+	5300 5850 5300 5700
+Connection ~ 5300 5700
+$Comp
+L GND #PWR011
+U 1 1 54B43781
+P 5300 6350
+F 0 "#PWR011" H 5300 6350 30  0001 C CNN
+F 1 "GND" H 5300 6280 30  0001 C CNN
+F 2 "" H 5300 6350 60  0000 C CNN
+F 3 "" H 5300 6350 60  0000 C CNN
+	1    5300 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR012
+U 1 1 54B4387F
+P 5550 6350
+F 0 "#PWR012" H 5550 6350 30  0001 C CNN
+F 1 "GND" H 5550 6280 30  0001 C CNN
+F 2 "" H 5550 6350 60  0000 C CNN
+F 3 "" H 5550 6350 60  0000 C CNN
+	1    5550 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 6250 5550 6350
+Wire Wire Line
+	5300 6250 5300 6350
+Text Notes 1550 1850 0    60   ~ 0
+stereo input (line in)\nmax. 2 Vpp
+$Comp
+L BARREL_JACK CON1
+U 1 1 54B44A9D
+P 2250 5700
+F 0 "CON1" H 2250 5950 60  0000 C CNN
+F 1 "12-24V" H 2250 5500 60  0000 C CNN
+F 2 "footprints:DC-conn" H 2250 5700 60  0001 C CNN
+F 3 "" H 2250 5700 60  0000 C CNN
+	1    2250 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR013
+U 1 1 54B44C2A
+P 2650 5900
+F 0 "#PWR013" H 2650 5900 30  0001 C CNN
+F 1 "GND" H 2650 5830 30  0001 C CNN
+F 2 "" H 2650 5900 60  0000 C CNN
+F 3 "" H 2650 5900 60  0000 C CNN
+	1    2650 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 5800 2650 5800
+Wire Wire Line
+	2650 5800 2650 5900
+Text Notes 1400 5350 0    60   ~ 0
+power supply 24VDC, 10W
+Text Notes 4850 5550 0    60   ~ 0
+supply filter
+Wire Wire Line
+	6100 3450 7450 3450
+Wire Wire Line
+	9200 3900 7450 3900
+Wire Wire Line
+	7450 3900 7450 3450
+Wire Wire Line
+	6150 3000 6150 2900
+Connection ~ 7100 2150
+Wire Wire Line
+	6150 2150 6150 2250
+Connection ~ 7100 2900
+Text Notes 4600 4350 0    60   ~ 0
+gain fixed to 26 dB\nstartup time 500ms\nmute and standby not used
+$Comp
+L GND #PWR014
+U 1 1 54B4F13A
+P 7100 2750
+F 0 "#PWR014" H 7100 2750 30  0001 C CNN
+F 1 "GND" H 7100 2680 30  0001 C CNN
+F 2 "" H 7100 2750 60  0000 C CNN
+F 3 "" H 7100 2750 60  0000 C CNN
+	1    7100 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR015
+U 1 1 54B4F199
+P 7100 3500
+F 0 "#PWR015" H 7100 3500 30  0001 C CNN
+F 1 "GND" H 7100 3430 30  0001 C CNN
+F 2 "" H 7100 3500 60  0000 C CNN
+F 3 "" H 7100 3500 60  0000 C CNN
+	1    7100 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L DUAL_POT RV1
+U 1 1 54B68D77
+P 3100 2200
+F 0 "RV1" H 3250 1900 50  0000 C CNN
+F 1 "10k, lin" H 3100 2600 50  0000 C CNN
+F 2 "footprints:Potentiometer_double_15mm" H 3100 2200 60  0001 C CNN
+F 3 "" H 3100 2200 60  0000 C CNN
+	1    3100 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 2400 3800 2400
+Wire Wire Line
+	4200 2400 4900 2400
+Wire Wire Line
+	4900 2250 4400 2250
+Wire Wire Line
+	4400 2250 4400 2000
+Wire Wire Line
+	4400 2000 4200 2000
+Wire Wire Line
+	3800 2000 3400 2000
+$Comp
+L GND #PWR016
+U 1 1 54B69860
+P 2900 2550
+F 0 "#PWR016" H 2900 2550 30  0001 C CNN
+F 1 "GND" H 2900 2480 30  0001 C CNN
+F 2 "" H 2900 2550 60  0000 C CNN
+F 3 "" H 2900 2550 60  0000 C CNN
+	1    2900 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR017
+U 1 1 54B69888
+P 2900 2150
+F 0 "#PWR017" H 2900 2150 30  0001 C CNN
+F 1 "GND" H 2900 2080 30  0001 C CNN
+F 2 "" H 2900 2150 60  0000 C CNN
+F 3 "" H 2900 2150 60  0000 C CNN
+	1    2900 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 2100 2900 2100
+Wire Wire Line
+	2900 2100 2900 2150
+Wire Wire Line
+	2950 2500 2900 2500
+Wire Wire Line
+	2900 2500 2900 2550
+$Comp
+L DUAL_SWITCH_INV SW1
+U 1 1 54B6A094
+P 3550 5600
+F 0 "SW1" H 3350 5750 50  0000 C CNN
+F 1 "SW" H 3400 5450 50  0000 C CNN
+F 2 "footprints:DPDT_push_switch" H 3550 5600 60  0001 C CNN
+F 3 "" H 3550 5600 60  0000 C CNN
+	1    3550 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L DUAL_SWITCH_INV SW1
+U 2 1 54B6A87D
+P 3550 6050
+F 0 "SW1" H 3350 6200 50  0000 C CNN
+F 1 "SW" H 3400 5900 50  0000 C CNN
+F 2 "footprints:DPDT_push_switch" H 3550 6050 60  0001 C CNN
+F 3 "" H 3550 6050 60  0000 C CNN
+	2    3550 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR018
+U 1 1 54B6B811
+P 5550 5650
+F 0 "#PWR018" H 5550 5750 30  0001 C CNN
+F 1 "VCC" H 5550 5750 30  0000 C CNN
+F 2 "" H 5550 5650 60  0000 C CNN
+F 3 "" H 5550 5650 60  0000 C CNN
+	1    5550 5650
+	1    0    0    -1  
+$EndComp
+Connection ~ 5550 5700
+$Comp
+L LED D1
+U 1 1 54B93055
+P 4350 6600
+F 0 "D1" H 4350 6700 50  0000 C CNN
+F 1 "PWR_LED" H 4350 6450 50  0000 C CNN
+F 2 "LEDs:LED-3MM" H 4350 6600 60  0001 C CNN
+F 3 "" H 4350 6600 60  0000 C CNN
+	1    4350 6600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R-RESCUE-class-D_amp R3
+U 1 1 54B932DA
+P 4350 6050
+F 0 "R3" V 4430 6050 40  0000 C CNN
+F 1 "4.7k" V 4357 6051 40  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 4280 6050 30  0001 C CNN
+F 3 "" H 4350 6050 30  0000 C CNN
+	1    4350 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 6300 4350 6400
+$Comp
+L GND #PWR019
+U 1 1 54B9373C
+P 4350 6850
+F 0 "#PWR019" H 4350 6850 30  0001 C CNN
+F 1 "GND" H 4350 6780 30  0001 C CNN
+F 2 "" H 4350 6850 60  0000 C CNN
+F 3 "" H 4350 6850 60  0000 C CNN
+	1    4350 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 6800 4350 6850
+Wire Wire Line
+	4400 2800 4900 2800
+Wire Wire Line
+	4400 2750 4400 2850
+Connection ~ 4400 2800
+Wire Wire Line
+	4400 3250 4400 3350
+Wire Wire Line
+	2550 5600 3050 5600
+Wire Wire Line
+	2950 5600 2950 6050
+Wire Wire Line
+	2950 6050 3050 6050
+Connection ~ 2950 5600
+Wire Wire Line
+	4050 5700 4500 5700
+Wire Wire Line
+	4050 6150 4150 6150
+Wire Wire Line
+	4150 6150 4150 5700
+Connection ~ 4150 5700
+$Comp
+L Jack_3.5mm_5pin J1
+U 1 1 54BE7A2A
+P 2250 2200
+F 0 "J1" H 2250 2450 60  0000 C CNN
+F 1 "line-in" H 2250 1900 60  0000 C CNN
+F 2 "footprints:stereo_jack_3.5mm" H 2250 2250 60  0001 C CNN
+F 3 "" H 2250 2250 60  0000 C CNN
+	1    2250 2200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2400 2100 2750 2100
+Wire Wire Line
+	2750 2100 2750 2300
+Wire Wire Line
+	2750 2300 2950 2300
+Wire Wire Line
+	2400 2300 2650 2300
+Wire Wire Line
+	2650 2300 2650 1900
+Wire Wire Line
+	2650 1900 2950 1900
+Wire Wire Line
+	2500 2200 2400 2200
+Connection ~ 2500 2400
+Wire Wire Line
+	2500 2000 2400 2000
+Connection ~ 2500 2200
+$Comp
+L C-RESCUE-class-D_amp C1
+U 1 1 54CF6486
+P 4000 2000
+F 0 "C1" H 4000 2100 40  0000 L CNN
+F 1 "1u" H 4006 1915 40  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 4038 1850 30  0001 C CNN
+F 3 "" H 4000 2000 60  0000 C CNN
+	1    4000 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L C-RESCUE-class-D_amp C3
+U 1 1 54CF6846
+P 6200 4050
+F 0 "C3" H 6200 4150 40  0000 L CNN
+F 1 "1u" H 6206 3965 40  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 6238 3900 30  0001 C CNN
+F 3 "" H 6200 4050 60  0000 C CNN
+	1    6200 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-RESCUE-class-D_amp C7
+U 1 1 54CF688A
+P 6450 4050
+F 0 "C7" H 6450 4150 40  0000 L CNN
+F 1 "1u" H 6456 3965 40  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 6488 3900 30  0001 C CNN
+F 3 "" H 6450 4050 60  0000 C CNN
+	1    6450 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-RESCUE-class-D_amp C2
+U 1 1 54CF6B20
+P 4000 2400
+F 0 "C2" H 4000 2500 40  0000 L CNN
+F 1 "1u" H 4006 2315 40  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 4038 2250 30  0001 C CNN
+F 3 "" H 4000 2400 60  0000 C CNN
+	1    4000 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5100 5700 5550 5700
+Wire Wire Line
+	4350 5800 4350 5700
+Connection ~ 4350 5700
+$Comp
+L R-RESCUE-class-D_amp R4
+U 1 1 54DA1503
+P 3500 2750
+F 0 "R4" V 3580 2750 40  0000 C CNN
+F 1 "4.7k" V 3507 2751 40  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 3430 2750 30  0001 C CNN
+F 3 "" H 3500 2750 30  0000 C CNN
+	1    3500 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-class-D_amp R5
+U 1 1 54DA1AA1
+P 3700 2750
+F 0 "R5" V 3780 2750 40  0000 C CNN
+F 1 "4.7k" V 3707 2751 40  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 3630 2750 30  0001 C CNN
+F 3 "" H 3700 2750 30  0000 C CNN
+	1    3700 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 2500 3500 2000
+Connection ~ 3500 2000
+Wire Wire Line
+	3700 2500 3700 2400
+Connection ~ 3700 2400
+$Comp
+L GND #PWR020
+U 1 1 54DA1FFB
+P 3500 3050
+F 0 "#PWR020" H 3500 3050 30  0001 C CNN
+F 1 "GND" H 3500 2980 30  0001 C CNN
+F 2 "" H 3500 3050 60  0000 C CNN
+F 3 "" H 3500 3050 60  0000 C CNN
+	1    3500 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR021
+U 1 1 54DA20F4
+P 3700 3050
+F 0 "#PWR021" H 3700 3050 30  0001 C CNN
+F 1 "GND" H 3700 2980 30  0001 C CNN
+F 2 "" H 3700 3050 60  0000 C CNN
+F 3 "" H 3700 3050 60  0000 C CNN
+	1    3700 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 3050 3500 3000
+Wire Wire Line
+	3700 3050 3700 3000
+Text Notes 3150 3250 0    60   ~ 0
+loudness correction
+Text Notes 3750 1850 0    60   ~ 0
+DC-blocking
+$Comp
+L INDUCTOR L4
+U 1 1 54E4A179
+P 7900 1850
+F 0 "L4" V 7850 1850 40  0000 C CNN
+F 1 "47u" V 8000 1850 40  0000 C CNN
+F 2 "footprints:inductor_d12.5_RM7" H 7900 1850 60  0001 C CNN
+F 3 "" H 7900 1850 60  0000 C CNN
+	1    7900 1850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7600 1850 7450 1850
+Connection ~ 7450 2100
+Wire Wire Line
+	8200 1850 8300 1850
+$Comp
+L INDUCTOR L5
+U 1 1 54E4A4E7
+P 7900 3050
+F 0 "L5" V 7850 3050 40  0000 C CNN
+F 1 "47u" V 8000 3050 40  0000 C CNN
+F 2 "footprints:inductor_d12.5_RM7" H 7900 3050 60  0001 C CNN
+F 3 "" H 7900 3050 60  0000 C CNN
+	1    7900 3050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7600 3050 7450 3050
+Wire Wire Line
+	7450 3050 7450 3300
+Connection ~ 7450 3300
+Wire Wire Line
+	8200 3050 8300 3050
+$EndSCHEMATC

@@ -1,0 +1,3 @@
+SMD-Bauteile löten: 22 min
+bedrahtete Bauteile: 52 min
+Messen und Testen: 10 min

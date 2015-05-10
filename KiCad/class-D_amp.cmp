@@ -1,0 +1,248 @@
+Cmp-Mod V01 Created by Cvpcb 0.201503020946+5465~21~ubuntu14.04.1-product   date = Die 10 Mär 2015 10:55:00 CET
+
+BeginCmp
+TimeStamp = /54CF6486;
+Reference = C1;
+ValeurCmp = 1u;
+IdModule  = Capacitors_SMD:C_1206_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54CF6B20;
+Reference = C2;
+ValeurCmp = 1u;
+IdModule  = Capacitors_SMD:C_1206_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54CF6846;
+Reference = C3;
+ValeurCmp = 1u;
+IdModule  = Capacitors_SMD:C_1206_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /5494811F;
+Reference = C4;
+ValeurCmp = 1u;
+IdModule  = Capacitors_SMD:C_1206_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54B432C8;
+Reference = C5;
+ValeurCmp = 470u;
+IdModule  = Capacitors_Elko_ThroughHole:Elko_vert_20x10mm_RM5_CopperClear;
+EndCmp
+
+BeginCmp
+TimeStamp = /54B43144;
+Reference = C6;
+ValeurCmp = 470u;
+IdModule  = Capacitors_Elko_ThroughHole:Elko_vert_20x10mm_RM5_CopperClear;
+EndCmp
+
+BeginCmp
+TimeStamp = /54CF688A;
+Reference = C7;
+ValeurCmp = 1u;
+IdModule  = Capacitors_SMD:C_1206_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54948A63;
+Reference = C8;
+ValeurCmp = 1u;
+IdModule  = Capacitors_SMD:C_1206_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54948B7F;
+Reference = C9;
+ValeurCmp = 1u;
+IdModule  = Capacitors_SMD:C_1206_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /549489B1;
+Reference = C11;
+ValeurCmp = 1u;
+IdModule  = Capacitors_SMD:C_1206_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54948DE5;
+Reference = C12;
+ValeurCmp = 1u;
+IdModule  = Capacitors_SMD:C_1206_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /549488F7;
+Reference = C13;
+ValeurCmp = 470u;
+IdModule  = Capacitors_Elko_ThroughHole:Elko_vert_20x10mm_RM5_CopperClear;
+EndCmp
+
+BeginCmp
+TimeStamp = /54948E21;
+Reference = C14;
+ValeurCmp = 470u;
+IdModule  = Capacitors_Elko_ThroughHole:Elko_vert_20x10mm_RM5_CopperClear;
+EndCmp
+
+BeginCmp
+TimeStamp = /54B3E3DC;
+Reference = C15;
+ValeurCmp = 220n;
+IdModule  = Capacitors_ThroughHole:Capacitor7x2.5RM5;
+EndCmp
+
+BeginCmp
+TimeStamp = /54B3E542;
+Reference = C16;
+ValeurCmp = 220n;
+IdModule  = Capacitors_ThroughHole:Capacitor7x2.5RM5;
+EndCmp
+
+BeginCmp
+TimeStamp = /54B3F1DC;
+Reference = C17;
+ValeurCmp = 470u;
+IdModule  = Capacitors_Elko_ThroughHole:Elko_vert_20x10mm_RM5_CopperClear;
+EndCmp
+
+BeginCmp
+TimeStamp = /54B3F72C;
+Reference = C18;
+ValeurCmp = 470u;
+IdModule  = Capacitors_Elko_ThroughHole:Elko_vert_20x10mm_RM5_CopperClear;
+EndCmp
+
+BeginCmp
+TimeStamp = /54B44A9D;
+Reference = CON1;
+ValeurCmp = 12-24V;
+IdModule  = footprints:DC-conn;
+EndCmp
+
+BeginCmp
+TimeStamp = /54B93055;
+Reference = D1;
+ValeurCmp = PWR_LED;
+IdModule  = LEDs:LED-3MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /54BE7A2A;
+Reference = J1;
+ValeurCmp = line-in;
+IdModule  = footprints:stereo_jack_3.5mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /54B4337E;
+Reference = L1;
+ValeurCmp = 330u;
+IdModule  = Inductors_NEOSID:Neosid_Inductor_Sd8;
+EndCmp
+
+BeginCmp
+TimeStamp = /5494911A;
+Reference = L2;
+ValeurCmp = 33u;
+IdModule  = footprints:Choke_SMD_12x12mm_h4.5mm_handsolder;
+EndCmp
+
+BeginCmp
+TimeStamp = /54B3E05D;
+Reference = L3;
+ValeurCmp = 33u;
+IdModule  = footprints:Choke_SMD_12x12mm_h4.5mm_handsolder;
+EndCmp
+
+BeginCmp
+TimeStamp = /54E4A179;
+Reference = L4;
+ValeurCmp = 47u;
+IdModule  = footprints:inductor_d12.5_RM7;
+EndCmp
+
+BeginCmp
+TimeStamp = /54E4A4E7;
+Reference = L5;
+ValeurCmp = 47u;
+IdModule  = footprints:inductor_d12.5_RM7;
+EndCmp
+
+BeginCmp
+TimeStamp = /54B40049;
+Reference = P2;
+ValeurCmp = LEFT;
+IdModule  = footprints:pt_1,5-2-3,5-h;
+EndCmp
+
+BeginCmp
+TimeStamp = /54B40242;
+Reference = P3;
+ValeurCmp = RIGHT;
+IdModule  = footprints:pt_1,5-2-3,5-h;
+EndCmp
+
+BeginCmp
+TimeStamp = /54B3F33E;
+Reference = R1;
+ValeurCmp = 4.7k;
+IdModule  = Resistors_SMD:R_1206_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54B3F5A0;
+Reference = R2;
+ValeurCmp = 4.7k;
+IdModule  = Resistors_SMD:R_1206_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54B932DA;
+Reference = R3;
+ValeurCmp = 4.7k;
+IdModule  = Resistors_SMD:R_1206_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54DA1503;
+Reference = R4;
+ValeurCmp = 4.7k;
+IdModule  = Resistors_SMD:R_1206_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54DA1AA1;
+Reference = R5;
+ValeurCmp = 4.7k;
+IdModule  = Resistors_SMD:R_1206_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54B68D77;
+Reference = RV1;
+ValeurCmp = 10k, lin;
+IdModule  = footprints:Potentiometer_double_15mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /54B6A094;
+Reference = SW1;
+ValeurCmp = SW;
+IdModule  = footprints:DPDT_push_switch;
+EndCmp
+
+BeginCmp
+TimeStamp = /54946ED5;
+Reference = U1;
+ValeurCmp = TPA3125D2;
+IdModule  = Sockets_DIP:DIP-20__300_ELL;
+EndCmp
+
+EndListe

@@ -1,0 +1,22 @@
+Circuit: * Z:\home\fritz\Studium\Akademie_Traunkirchen\Simulationen\class_D_principe.asc
+
+Per .tran options, skipping operating point for transient analysis.
+
+Date: Fri May 08 14:50:33 2015
+Total elapsed time: 5.361 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 418925
+traniter = 418925
+tranpoints = 208976
+accept = 207369
+rejected = 1607
+matrix size = 9
+fillins = 0
+solver = Normal
+Matrix Compiler1: 206 Bytes object code size  0.8/0.7/[0.7]
+Matrix Compiler2: 497 Bytes object code size  0.7/0.8/[0.6]
+
+
